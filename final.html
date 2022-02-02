@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="player.css">
+    <link rel="stylesheet" href="animate.min.css">
+</head>
+<body>
+    <img src="./assets/images/1.png" class="animate__animated animate__fadeIn" id="background" />
+    <audio src="./assets/music/pinkmatter.mp3" id="song"></audio>
+
+    <div id="container" class="container animate__animated animate__fadeIn">  
+        <div class="box"></div> 
+        <div class="indexBox"></div>
+        <div class="songindex">1/5</div>     
+        <img src="./assets/images/1.png" id="thumbnail" />
+        
+        <img src="./assets/icons/play.png" onclick="playPause()" id="play-pause" />
+        <img src="./assets/icons/forward.png" onclick="nextSong();restart()" id="next-song" />
+        <img src="./assets/icons/backward.png" onclick="previousSong();restart()" id="previous-song" />
+
+        
+        <div class="song-artist">Frank Ocean</div>
+        <div class="song-title">Pink Matter</div>
+        <div class="label">
+            <div id="desc">This is the first song that you have recommended to me. Even though I actually do not listen to this kind of music but I still hear it everyday because the person who recommended it is so special to me.
+            </div>
+        </div>
+
+        <!-- Input element for progress bar - min=0 starting value of every song - max length will change per song so leave empty -->
+        
+        <input 
+            type="range" 
+            id="progress-bar" 
+            min="0" 
+            max="" 
+            value="0" 
+            onchange="changeProgressBar()"
+        />
+
+        <div class="currentTime"></div>
+        <div class="durationTime"></div>
+    </div>
+
+    <script src="player.js"></script>
+</body>
+</html>

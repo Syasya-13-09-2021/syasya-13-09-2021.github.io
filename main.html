@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our Memories</title>
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color: black; background-image: url('bg.png');background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+
+    <div class="w3-container">
+
+        <div class="w3-dislpay-container">
+
+            <div class="animate__animated animate__fadeIn w3-white w3-hover-grayscale w3-hover-shadow w3-round-xxlarge w3-margin w3-card w3-display-topleft" style="width: 20%; height: 350px; animation-delay: 2s">
+                    <img style="cursor: pointer;" class="w3-round-xxlarge" src="img1.png" style="width: 100%; height: 100%;" onclick="document.getElementById('modal01').style.display='block'">
+            </div>
+
+            <div class="animate__animated animate__fadeIn w3-white  w3-hover-grayscale w3-hover-shadow w3-round-xxlarge w3-margin w3-card w3-display-topmiddle" style="width: 20%; height: 350px; animation-delay: 3s;">
+                <img style="cursor: pointer;" class="w3-round-xxlarge" src="img2.png" style="width: 100%; height: 100%;" onclick="document.getElementById('modal02').style.display='block'">
+            </div>
+
+            <div class="animate__animated animate__fadeIn w3-white w3-opacity-min w3-hover-grayscale w3-hover-shadow w3-round-xxlarge w3-margin w3-card w3-display-topright" style="width: 20%; height: 350px; animation-delay: 4s;">
+                <img style="cursor: pointer;" class="w3-round-xxlarge" src="img3.png" style="width: 100%; height: 100%;" onclick="document.getElementById('modal03').style.display='block'">
+            </div>
+
+            <div class="animate__animated animate__fadeIn w3-white w3-opacity-min w3-hover-grayscale w3-hover-shadow w3-round-xxlarge w3-margin w3-card w3-display-bottomleft" style="width: 20%; height: 350px; animation-delay: 5s;">
+                <img style="cursor: pointer;" class="w3-round-xxlarge" src="img4.png" style="width: 100%; height: 100%;" onclick="document.getElementById('modal04').style.display='block'">
+            </div>
+
+            <div class="animate__animated animate__fadeIn w3-white w3-opacity-min w3-hover-grayscale w3-hover-shadow w3-round-xxlarge w3-margin w3-card w3-display-bottommiddle" style="width: 20%; height: 350px; animation-delay: 6s;">
+                <img style="cursor: pointer;" class="w3-round-xxlarge" src="img5.png" style="width: 100%; height: 100%;" onclick="document.getElementById('modal05').style.display='block'">
+            </div>
+
+            <div class="animate__animated animate__fadeIn w3-white w3-opacity-min w3-hover-grayscale w3-hover-shadow w3-round-xxlarge w3-margin w3-card w3-display-bottomright" style="width: 20%; height: 350px; animation-delay: 7s;">
+                <img id="this" style="cursor: pointer;" class="w3-round-xxlarge" src="blank.png" style="width: 100%; height: 100%;" onclick="document.getElementById('modal06').style.display='block'; next(); document.getElementById('this').src = 'img6.png'">
+            </div>
+
+            <div class="animate__animated animate__fadeIn  w3-btn w3-padding w3-display-middle  w3-theme-d3" style="width:100%; animation-delay: 1s;" id="next">
+                <p class="w3-center" style="color: white; font-family: 'Hina Mincho', serif; font-size: 20px;">Our Memories</p>
+            </div>
+
+            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+
+                <div class="w3-modal-content w3-animate-zoom w3-round-xxlarge" style="width: 20%;">
+                            <img id="pic" src="img1.png" class="w3-round" style="border-radius:20px 20px 0px 0px;">
+                        
+                        <span class="w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                         <div id="modal" class="w3-container w3-theme-l3" style="border-radius:0px 0px 20px 20px;">
+                             <h3>Our First Moment</h3>
+                             <p>I would never expect that I would actually find my soulmate in the snapchat. Getting to know and have you in my life is truly a blessing from god.
+                                 Our first chat does mean a lot to me. If i were given a chance to bring back that conversation I would definitely do it. It is indeed a very awkward conversation but it means a lot to me. 
+                                 I remembered during that time I was doing my addmath homework and addded you in my snapchat. Seeing you start a chat with me; god knows how big I smiled at the moment. I would never forget
+                                 that day in my life. 5 October 2020 will be in my heart and mind forever.
+                             </p>
+                         </div>
+        
+                </div>
+
+            </div>
+
+            <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+
+                <div class="w3-modal-content w3-animate-zoom w3-round-xxlarge" style="width: 20%;">
+                            <img id="pic" src="img2.png" class="w3-round">
+                        
+                        <span class="w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                         <div id="modal" class="w3-container w3-theme-l3" >
+                             <h3>Cringe?</h3>
+                             <p>
+                                I know what you are thinking "wth this is so cringe". Yes we are, thats just how we are
+                                back then. I really miss how I would wait to finish class so I can spend time chatting with
+                                you. I remembered you introduced me to your mom and I actually liked it sooo much and very happy
+                                because it makes me felt so special. Reading our old onversations teared me up a bit. I'm really happy
+                                because you are willing to stay with me from then till now despite my uncountable flaws. 10 Oct 2020 it is. A good moment to look back to.
+                             </p>
+                         </div>
+        
+                </div>
+
+            </div>
+
+            <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+
+                <div class="w3-modal-content w3-animate-zoom w3-round-xxlarge" style="width: 20%;">
+                            <img id="pic" src="img3.png" class="w3-round">
+                        
+                        <span class="w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                         <div id="modal" class="w3-container w3-theme-l3" >
+                             <h3>I Love You.</h3>
+                             <p>
+                               I actually am not sure if you remember this but this is actually the first time we officially said I love you to each other.
+                               It was the moment that I knew you will be not like anyone else in my life. I knew you would be by my side through thick and thin.
+                               You may think the phrase "I love you" is overused but for me everytime I say it I mean it with all my heart.
+                             </p>
+                         </div>
+        
+                </div>
+
+            </div>
+
+            <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+
+                <div class="w3-modal-content w3-animate-zoom w3-round-xxlarge" style="width: 20%;">
+                            <img id="pic" src="img4.png" class="w3-round">
+                        
+                        <span class="w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                         <div id="modal" class="w3-container w3-theme-l3" >
+                             <h3>Nangis pon Cute</h3>
+                             <p>
+                                Ok this picture means a lot sebab I dont think we have any other picture kita selfie sama-sama. Masa ni you are sad because we decided not to talk to each other but then we went on a jog(not exactly) together with John and Keknis.
+                                Then we spend some time at the Astaka and you cried there sebab sedih sangat. I want to take a picture because I'm trying to brighten your mood up. I also remembered masa ni I starred at your face lama-lama 
+                                because after that kita dah tanak jumpa.
+                             </p>
+                         </div>
+        
+                </div>
+
+            </div>
+
+            <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+
+                <div class="w3-modal-content w3-animate-zoom w3-round-xxlarge" style="width: 20%;">
+                            <img id="pic" src="img5.png" class="w3-round">
+                        
+                        <span class="w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                         <div id="modal" class="w3-container w3-theme-l3" >
+                             <h3>Gambar ni lagi</h3>
+                             <p>
+                                Yes this legendary pic of us that has brought controversial in our names. But still this picture is one of my favs because it is soo nice and cinematic with the kinda hazy scenery.
+                                I like this picture a lot and this picture looks soo nice to be use as a wallaper or cover. And This picture holds one of the best moment for me in TGB. Dapat tangkap gambar dengan Sya,
+                                Duduk bawah pokok dengan Sya, Minum tealive sama-sama, Dapat bunga sama-sama, I would never-ever forget the  moments in this day forever in my life.
+                             </p>
+                         </div>
+        
+                </div>
+
+            </div>
+
+            <div id="modal06" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+
+                <div class="w3-modal-content w3-animate-zoom w3-round-xxlarge" style="width: 20%;">
+                            <img id="pic" src="img6.png" class="w3-round">
+                        
+                        <span class="w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                         <div id="modal" class="w3-container w3-theme-l3" >
+                             <h3>You Are My Everything</h3>
+                             <p>
+                                To be honest tak kisah la moment apa pon, buat apa, dekat mana, as long as it is spending time with you, It will be definitely one of the best moment in my life. It is not about the place or anything else
+                                it is always about the person which is for me is forever gonna be You. The most special person in my heart, the most special person in my world. I always appreciate the moments we have together and kalau boleh
+                                I want to continue wrote about the moments we had together in a journal so that we can always look back to it and appreciate those beautiful moments. We have a lot of time lagi so don't leave me and lets create
+                                more graceful moments for ourselves.
+                             </p>
+                         </div>
+        
+                </div>
+
+            </div>
+            
+
+        </div>
+
+    </div>
+
+    <style>
+
+        #modal{
+            border-radius:0px 0px 20px 20px;
+        }
+
+        #pic{
+            border-radius:20px 20px 0px 0px;
+        }
+
+
+    </style>
+
+    <script>
+
+        function next(){
+            var h1 = document.getElementById("next")
+            h1.onclick = function(){window.location.replace("final.html");}
+        }
+
+    </script>
+</body>
+
+</html>
