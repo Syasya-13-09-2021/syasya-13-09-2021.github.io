@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    background: rgb(252, 188, 215);
+}
+
+#background {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+/* container for music player */
+.container {
+    animation-delay: 2s;
+    position: absolute;
+    height: 500pt;
+    width: 500pt;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #161616;
+}
+
+/* container for play, pause, previous track, next track, and progress bar  */
+.box {
+    position: absolute;
+    height: 100%;
+    width: 103%;
+    background: -webkit-linear-gradient(45deg, rgb(229, 106, 179), rgb(255, 206, 230));
+    z-index: 4;
+}
+
+.indexBox {
+    position: absolute;
+    height: 5%;
+    width: 20%;
+    background: -webkit-linear-gradient(45deg, rgb(229, 106, 179), rgb(255, 206, 230));
+    z-index: 4;
+    top: 0%;
+    right: -13%;
+    border-radius:10px;
+}
+
+.lettersindex {
+    position: absolute;
+    z-index: 4;
+    color: rgb(255, 255, 255);
+    text-shadow: black 1px 1px 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    top: 0.8%;
+    right: 2%;
+}
+
+.label {
+    display: table;
+    position: absolute;
+    text-align: left;
+    text-shadow: black 2px 2px 2px;
+    width: 80%;
+    height: 30%;
+    z-index: 4;
+    top: 8%;
+}
+
+#desc {
+    white-space: pre-line;
+    display: table-cell;
+    vertical-align: left;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+
+
+/* album cover */
+#thumbnail {
+    position: absolute;
+    width: 103%;
+    top: -7%;
+    transition: 1s;
+    z-index: 3;
+}
+
+/* track artist */
+.letters-title {
+    text-shadow: white 2px 2px 2px;
+    position: absolute;
+    z-index: 4;
+    color: #0C1E7F;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    top: 3%;
+    left: 4%;
+}
+
+/* track title */
+.song-title {
+    text-shadow: black 2px 2px 2px;
+    position:absolute;
+    z-index: 4;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    top: 8%;
+    left: 4%;
+}
+
+/* style for next and previous song images */
+#next-song, #previous-song {
+    -webkit-filter: drop-shadow(10px 10px 10px #222);
+    filter: drop-shadow(10px 10px 10px #222);
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+    cursor: pointer;
+    bottom: 13.5%;
+    font-size: 40px;
+    z-index: 4;
+    bottom: 50%;
+}
+
+/* unique style for next song image */
+#next-song {
+    right: 3%;
+}
+
+/* unique style for previous song image */
+#previous-song {
+    left: 3%;
+}
