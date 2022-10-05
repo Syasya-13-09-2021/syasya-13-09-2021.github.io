@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="w3.css">
+    <title>For My Girl</title>
+</head>
+<body>
+    
+    <div class="w3-container w3-display-middle">
+        <h1 id="text" class="typewriter">For Syasya.</h1>
+    </div>
+
+            <div class="w3-container w3-display-middle" style="width: 20%;">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="w3-container w3-margin w3-right">
+                    <input id="button" class="w3-btn w3-black w3-round-xlarge" type="button" onclick="next();restart()" onclick="restart()" value="Next">
+                </div>
+                
+
+            </div>
+            
+
+            
+
+
+      <script>
+          "use strict";
+          var index = 0;
+          var next_text = ["test1", "Today is indeed,", "a very special day.", "Thank you", "For staying", "by my side.", "I hope", "You enjoy", "This simple present", "For my girl."];
+          var element = document.getElementById("text");
+
+          function restart(){
+              element.classList.remove("typewriter");
+              void element.offsetWidth;
+
+              element.classList.add("typewriter");
+
+          }
+
+          function next(){
+              
+              if(index === next_text.length - 1){
+                
+                window.location.replace("main.html");
+              }else{
+                  if(index === next_text.length -2){
+                    document.querySelector('#button').value = 'I love you';
+                  }
+                index++;
+                document.getElementById("text").innerHTML = next_text[index];
+              }
+              
+          }
+      </script>
+
+</body>
+</html>
