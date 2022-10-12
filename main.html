@@ -124,13 +124,36 @@
 
     intros = ["Hi Syasya, how are you?", "Do you have a good day today?", "I hope you are doing good", "I miss you sooo much", "Rindu saya ke tuuu", "You look prettier when you smile"]
 
+    var myInterval = setInterval(everyTime, 1);
+
+    function restart(){
+        var myInterval1 = setInterval(everyTen, 10000);
+        
+        function everyTen(){
+
+            let index = intros.indexOf(document.getElementById("intro").innerHTML)
+            console.log("index =" + index)
+
+            while(true){
+                let x = Math.floor((Math.random() * intros.length));
+                console.log("x =" + x)
+                if(index != x){
+                    document.getElementById("intro").innerHTML = intros[x];
+                    console.log(intros[x])
+                    break;
+                }
+            }
+        }
+    }
+
     function everyTime() {
-        let x = Math.floor((Math.random() * 6));
+        let x = Math.floor((Math.random() * intros.length));
         document.getElementById("intro").innerHTML = intros[x];
+        restart();
         clearInterval(myInterval);
     }
 
-    var myInterval = setInterval(everyTime, 1);
+    
 
     function floatNote(){
         document.getElementById("f-note").style.display = "block";
