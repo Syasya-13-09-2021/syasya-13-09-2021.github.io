@@ -122,7 +122,8 @@
 
 <script>
 
-    intros = ["Hi Syasya, how are you?", "Do you have a good day today?", "I hope you are doing good", "I miss you sooo much", "Rindu saya ke tuuu", "You look prettier when you smile"]
+    intros = ["Hi Syasya, how are you?", "Do you have a good day today?", "I hope you are doing good", "I miss you sooo much", "Rindu saya ke tuuu", "You look prettier when you smile", "I always think about you", "Sending virtual hug to my baby", "You are my world", "I'm always proud of youu <3"]
+    sNotes = ["Sayang awak banyak-banyak", "Don't forget to eatt", "Take a rest once in a while", "Sayangg, saje je nak panggil sayang", "Saya suka awak, awak suka saya tak?", "Nak attention bolehh jaskdhj", "Rindunyaa", "I love you sooo much"]
 
     var myInterval = setInterval(everyTime, 1);
 
@@ -132,14 +133,11 @@
         function everyTen(){
 
             let index = intros.indexOf(document.getElementById("intro").innerHTML)
-            console.log("index =" + index)
 
             while(true){
                 let x = Math.floor((Math.random() * intros.length));
-                console.log("x =" + x)
                 if(index != x){
                     document.getElementById("intro").innerHTML = intros[x];
-                    console.log(intros[x])
                     break;
                 }
             }
@@ -156,9 +154,25 @@
     
 
     function floatNote(){
-        document.getElementById("f-note").style.display = "block";
-        document.getElementById("f-note").className = "animate__slideInRight animate__animated";
-        document.getElementById("f-note").innerHTML = "Keep in mind that I'm always yours"
+        var fNote = document.getElementById("f-note")
+        fNote.style.display = "block";
+        fNote.className = "animate__slideInRight animate__animated";
+
+        if (fNote.innerHTML == ""){
+            let x = Math.floor((Math.random() * sNotes.length));
+            fNote.innerHTML = sNotes[x];
+        }
+        else{
+            let index = sNotes.indexOf(fNote.innerHTML)
+
+            while(true){
+                let x = Math.floor((Math.random() * sNotes.length));
+                if(index != x){
+                    fNote.innerHTML = sNotes[x];
+                    break;
+                }
+            }
+        }
     }
 
     function stopp(){
